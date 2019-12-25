@@ -1,0 +1,10 @@
+'use strict';
+
+const path = require('path');
+
+module.exports = {
+  'config': path.resolve('utils', 'dbConf.js'),
+  'models-path': path.resolve('model', 'sequel'),
+  'seeders-path': path.resolve('model', 'seeders'),
+  'migrations-path': path.resolve('model', 'migrations')
+}
