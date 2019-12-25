@@ -33,7 +33,8 @@ fs.readdirSync(modelPath)
 
 Object.keys(db).forEach(modelName => {
   if (db[modelName].associate) {
-    db[modelName].associate(db);
+    console.log("modelName: ", modelName)
+    db[modelName].associations(db);
   }
 });
 

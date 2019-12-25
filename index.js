@@ -46,7 +46,7 @@ app.use(function (req, res, next) {
 
 
 const apis = require("./src");
-app.use("/payment/api", apis);
+app.use("/api", apis);
 
 
 const response = utils.response

@@ -24,18 +24,23 @@ const Battalion = (sequelize, DataTypes) => {
 			type: DataTypes.INTEGER,
 			allowNull: false
 		},
+		army_id: {
+			type: DataTypes.INTEGER,
+			allowNull: false
+		},
 		is_delete: {
 			type: DataTypes.BOOLEAN,
 			defaultValue: false,
 			set(value){
-				if(value)
-					this.setDataValue('deletedAt', new Date())
+				this.setDataValue('is_delete', value);
+				// if(value)
+				// 	this.setDataValue('deletedAt', new Date())
 			}
 		},
-		deletedAt: {
-			type: DataTypes.DATETIME,
-			allowNull: true
-		}
+		// deletedAt: {
+		// 	type: DataTypes.DATETIME,
+		// 	allowNull: true
+		// }
 	}
 
 	const options = {
@@ -44,9 +49,9 @@ const Battalion = (sequelize, DataTypes) => {
 
 	const battalion = sequelize.define(constants.BATTALION_TABLE, attributes, options)
 
-	battalion.associations = (db) => {
-		battalion.belongsTo(db[constants.EMPIRE_TABLE], { foreignKey: 'army_id'});
-	};
+	// battalion.associations = (db) => {
+	// 	battalion.belongsTo(db[constants.EMPIRE_TABLE], { foreignKey: 'army_id'});
+	// };
 	return battalion;
 }
 

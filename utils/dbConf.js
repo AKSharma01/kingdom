@@ -24,7 +24,7 @@ let setting = {
         evict: 50000,
         handleDisconnects: true
     },
-    operatorsAliases: false,
+    // operatorsAliases: false,
     logging: false
 };
 

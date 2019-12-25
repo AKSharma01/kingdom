@@ -63,7 +63,8 @@ const SUCCESS_STATUS = {
 const SEQUEL_TABLE_NAME = {
     EMPIRE_TABLE: "empire",
     RECORD_TABLE: "record",
-    BATTALION_TABLE: 'battalion'
+    BATTALION_TABLE: 'battalion',
+    ARMY_STRENGTH_TABLE: "army_strength",
 }
 
 const NO_SEQUEL_TABLE_NAME = {

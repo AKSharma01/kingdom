@@ -38,21 +38,40 @@ const Empire = (sequelize, DataTypes) => {
 			type: DataTypes.BOOLEAN,
 			defaultValue: false,
 			set(value){
-				if(value)
-					this.setDataValue('deletedAt', new Date())
+				this.setDataValue('is_delete', value);
+				// if(value)
+				// 	this.setDataValue('deletedAt', new Date())
 			}
 		},
-		deletedAt: {
-			type: DataTypes.DATETIME,
-			allowNull: true
-		}
+		// deletedAt: {
+		// 	type: DataTypes.DATETIME,
+		// 	allowNull: true
+		// }
 	}
 
+	// const relations = {
+	// 	associate: function(models){
+	// 		console.log("hasdfahisfbdkagsyidfhujggvjbhk")
+	// 		empire.hasMany(constants.BATTALION_TABLE, {
+	// 			foreignKey: 'army_id',
+	// 			onDelete: 'cascade'
+	// 		});
+	// 	}
+	// }
+
 	const options = {
-		freezeTableName: true
+		freezeTableName: true,
+		// classMethods: relations
 	}
 
 	const empire = sequelize.define(constants.EMPIRE_TABLE, attributes, options)
+
+	// empire.associations = (db) => {
+	// 	empire.hasOne(constants.BATTALION_TABLE, {
+	// 		foreignKey: 'army_id',
+	// 		onDelete: 'cascade'
+	// 	})
+	// }
 	return empire;
 }
 

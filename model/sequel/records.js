@@ -32,14 +32,15 @@ const Record = (sequelize, DataTypes) => {
 			type: DataTypes.BOOLEAN,
 			defaultValue: false,
 			set(value){
-				if(value)
-					this.setDataValue('deletedAt', new Date())
+				this.setDataValue('is_delete', value);
+				// if(value)
+				// 	this.setDataValue('deletedAt', new Date())
 			}
 		},
-		deletedAt: {
-			type: DataTypes.DATETIME,
-			allowNull: true
-		}
+		// deletedAt: {
+		// 	type: DataTypes.DATETIME,
+		// 	allowNull: true
+		// }
 	}
 
 	const options = {
