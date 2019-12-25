@@ -45,8 +45,8 @@ const Battalion = (sequelize, DataTypes) => {
 	const battalion = sequelize.define(constants.BATTALION_TABLE, attributes, options)
 
 	battalion.associations = (db) => {
-        battalion.belongsTo(db[constants.EMPIRE_TABLE], { foreignKey: 'army_id'});
-    };
+		battalion.belongsTo(db[constants.EMPIRE_TABLE], { foreignKey: 'army_id'});
+	};
 	return battalion;
 }
 
