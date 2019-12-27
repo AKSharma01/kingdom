@@ -18,7 +18,9 @@ const falconAttackToucan = async(req, res, next) => {
 		option.strength = await helpers.empireStrength(option.armyA.id, option.armyB.id)
 		await validateInputBody(req.body, option.armyB.battalions)
 		const computed = await compute(req.body, option)
-		Response.success(constants.SUCCESS_200.STATUS, "result", {requestBody:req.body, computed})
+		const message = computed.message
+		delete computed['message']
+		Response.success(constants.SUCCESS_200.STATUS, message, computed.availableBattalion)
 	}catch(error){
 		console.log("error_falconAttackToucan: ", error.message)
 		// console.log("error_falconAttackToucan: ", error)
