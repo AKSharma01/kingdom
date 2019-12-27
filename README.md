@@ -4,8 +4,6 @@
 
 [![Nodejs version](https://img.shields.io/badge/nodejs-10.16.3-blue.svg)](https://nodejs.org/en/blog/release/v10.16.3/) [![NPM](https://img.shields.io/badge/npm-6.11.3-skyblue.svg)](https://www.npmjs.com/package/npm/v/6.11.3) [![yarn](https://img.shields.io/badge/yarn-1.19.2-%23ff3300.svg)](https://github.com/yarnpkg/yarn#readme) [![Postgres](https://img.shields.io/badge/postgres-11.5-green.svg)](https://www.npmjs.com/package/mongoose/v/5.7.14)  [![Nodemon](https://img.shields.io/badge/nodemon-2.0.1-%23990099.svg)](https://www.npmjs.com/package/nodemon/v/2.0.1) [![node-postgres](https://img.shields.io/badge/pg-7.15.1-green.svg)](https://github.com/brianc/node-postgres) [![express](https://img.shields.io/badge/express-4.17.1-green.svg)](http://expressjs.com/) [![sequelize](https://img.shields.io/badge/sequelize-5.21.2-%2390099.svg)](https://sequelize.org/v5/) [![sequelize-cli](https://img.shields.io/badge/sequelize_cli-5.5.1-orange.svg)](https://github.com/sequelize/cli)
 
-Selltm Payment Backend project to track payment & bonus for the reseller (Web/android).
-
 
 __Table of content__
     
