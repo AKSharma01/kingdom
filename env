@@ -1,0 +1,35 @@
+DEBUG=true
+ENV=dev
+PORT=3000
+
+##========================= local enviroment ===================
+LOCAL_PSQL_DB_USER=postgres
+LOCAL_PSQL_DB_PASSWORD=password
+LOCAL_PSQL_DB_PORT=5432
+LOCAL_PSQL_DB_NAME=warehouse
+LOCAL_PSQL_DB_HOST=localhost
+LOCAL_PSQL_DB_TYPE=postgres
+
+
+
+
+##============================ dev enviroment ===================
+DEV_PSQL_DB_USER=akashsharma
+DEV_PSQL_DB_PASSWORD=password
+DEV_PSQL_DB_PORT=5432
+DEV_PSQL_DB_NAME=kingdom
+DEV_PSQL_DB_HOST=localhost
+DEV_PSQL_DB_TYPE=postgres
+
+
+
+
+##============================ production enviroment ===================
+PROD_PSQL_DB_USER=
+PROD_PSQL_DB_PASSWORD=
+PROD_PSQL_DB_PORT=5432
+PROD_PSQL_DB_NAME=
+PROD_PSQL_DB_HOST=
+PROD_PSQL_DB_TYPE=postgres
+
+

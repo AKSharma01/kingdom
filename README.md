@@ -46,6 +46,7 @@ __Table of content__
  >>> yarn install (to install project dependencies)
  >>> sequelize-cli db:migrate (to migrate all db related change)
  >>> sequelize db:seed:all
+ >>> mv env .env
  >>> nodemon .
 server is running!!!!
 ```
