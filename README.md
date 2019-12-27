@@ -17,7 +17,7 @@ __Table of content__
 > Pre-requirement
 **node.js**, **yarn**, **postgres**
 
-#### Install The Node.Js And NMP Packages On Ubuntu 16.04 / 18.04 LTS
+#### Install The Node.Js And NMP Packages
 ```sh
  >>> brew install node
  >>> nodejs -v
