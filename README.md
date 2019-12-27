@@ -1,4 +1,4 @@
-# Selltm Payment Backend
+# KINGDOM
 
 [![N|KingDom](https://www.48hourslogo.com/48hourslogo_data/2018/04/15/72074_1523734206.png)](https://github.com/AKSharma01/kingdom)
 
