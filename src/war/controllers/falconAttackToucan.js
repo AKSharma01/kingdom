@@ -161,7 +161,7 @@ const replaceBattalion = (availableBattalion, battalion) => {
 			}
 			else if(availableBattalion[operation.battalion]){
 				console.log("partial replacement")
-				let addup = operation.divide? availableBattalion[operation.battalion]/2: availableBattalion[operation.battalion]*2
+				let addup = operation.divide? availableBattalion[operation.battalion]*2: availableBattalion[operation.battalion]/2
 				availableBattalion[battalion] += addup
 				availableBattalion[operation.battalion] -= availableBattalion[operation.battalion]
 			}else
