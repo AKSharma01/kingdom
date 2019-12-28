@@ -56,7 +56,7 @@ server is running!!!!
  >>> set postman env 
  domain : http://localhost:3000
  >>> import link 
- https://www.getpostman.com/collections/f51e1f6cdb7006c942e6
+ https://www.getpostman.com/collections/e33c7cadb8f937dbbf89
 ```
 
 
